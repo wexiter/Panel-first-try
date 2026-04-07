@@ -1,0 +1,9 @@
+Package: com.gemini.ffmenu
+Name: Gemini FF Panel
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Antiban Menu for Free Fire
+Maintainer: Gemini
+Author: Gemini
+Section: Tweaks
