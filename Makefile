@@ -1,6 +1,5 @@
-.RECIPEPREFIX = >
-ARCHS = arm64
-TARGET = iphone:clang:latest:12.0
+TARGET := iphone:clang:latest:12.0
+ARCHS := arm64
 
 include $(THEOS)/makefiles/common.mk
 
