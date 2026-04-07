@@ -6,7 +6,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Updated to v4
 
       - name: Setup Theos
         uses: Randomblock1/theos-action@v1
@@ -14,10 +14,10 @@ jobs:
       - name: Build
         run: |
           export THEOS=$GITHUB_WORKSPACE/theos
-          make package FINALPACKAGE=1
+          make clean package FINALPACKAGE=1
         
       - name: Upload
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # Updated to v4 (Fixes your error)
         with:
           name: Gemini-Dylib
           path: packages/*.deb
